@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: trader_auto_production
+  username: trader_auto
+  password: <%= ENV['TRADER_AUTO_DATABASE_PASSWORD'] %>
